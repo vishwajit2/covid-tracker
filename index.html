@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="static\index.css">
+    <link rel="icon" type="image/png"
+      href="static/favicon.ico">
+    <title>Corona Spread Tracker</title>
+  </head>
+  <body>
+    <header>
+       <div class="logo">
+           <img src="static/favicon.ico" alt="">
+           <p>COVID-19<br/>Statistics</p>
+       </div>
+       <nav>
+           <ul>
+               <li><a href="">World</a></li>
+               <li><a href="india.html">India</a></li>
+           </ul>
+       </nav>
+   </header>
+
+    <h3> Global Information </h3>
+
+    <main>
+      <div class="container-fluid" >
+        <div class="card-deck">
+        <div class="card border-success">
+          <div class="card-header border-success">Total Cases</div>
+          <div class="card-body text-center text-success">
+              <p class="card-title" id="wtc"></p>
+          </div>
+        </div>
+        <div class="card border-success">
+          <div class="card-header border-success"> Total Deaths </div>
+          <div class="card-body text-center text-success">
+            <p class="card-title" id="wtd"></p>
+          </div>
+        </div>
+        <div class="card border-success">
+          <div class="card-header border-success"> Total Recovered </div>
+          <div class="card-body text-center text-success">
+            <p class="card-title" id="wtr"></p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="container-fluid" >
+        <div class="card-deck">
+        <div class="card border-success">
+          <div class="card-header border-success">New Cases</div>
+          <div class="card-body text-center text-success">
+              <p class="card-title" id="wnc"></p>
+          </div>
+        </div>
+        <div class="card border-success">
+          <div class="card-header border-success"> New Deaths </div>
+          <div class="card-body text-center text-success">
+            <p class="card-title" id="wnd"></p>
+          </div>
+        </div>
+        <div class="card border-success">
+          <div class="card-header border-success"> New Recovered </div>
+          <div class="card-body text-center text-success">
+            <p class="card-title" id="wnr"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Country wise Statistics</h3>
+
+      <div class="container-fluid">
+      <select class="custom-select" style="width:40%" id="country">
+      </select>
+      </div>
+
+      <h4 id="selection" style="color:#30402f"></h4>
+
+      <div class="chart">
+                <canvas id="axes_line_chart"></canvas>
+      </div>
+
+    <div class="container-fluid" >
+      <div class="card-deck">
+      <div class="card border-success">
+        <div class="card-header border-success">Total Cases</div>
+        <div class="card-body text-center text-success">
+            <p class="card-title" id="ctc"></p>
+        </div>
+      </div>
+      <div class="card border-success">
+        <div class="card-header border-success"> Total Deaths </div>
+        <div class="card-body text-center text-success">
+          <p class="card-title" id="ctd"></p>
+        </div>
+      </div>
+      <div class="card border-success">
+        <div class="card-header border-success"> Total Recovered </div>
+        <div class="card-body text-center text-success">
+          <p class="card-title" id="ctr"></p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="container-fluid" >
+        <div class="card-deck">
+        <div class="card border-success">
+          <div class="card-header border-success">New Cases</div>
+          <div class="card-body text-center text-success">
+              <p class="card-title" id="cnc"></p>
+          </div>
+        </div>
+        <div class="card border-success">
+          <div class="card-header border-success"> New Deaths </div>
+          <div class="card-body text-center text-success">
+            <p class="card-title" id="cnd"></p>
+          </div>
+        </div>
+        <div class="card border-success">
+          <div class="card-header border-success"> New Recovered </div>
+          <div class="card-body text-center text-success">
+            <p class="card-title" id="cnr"></p>
+          </div>
+        </div>
+      </div>
+  </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="static\index.js"> </script>
+
+  </body>
+</html>
